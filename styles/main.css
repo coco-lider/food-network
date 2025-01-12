@@ -178,12 +178,6 @@ h4 {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 40px;
 }
-@media (max-width: 600px) {
-  .features .container .features-cards {
-    font-size: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
-}
 .features .container .features-cards .features-card {
   display: flex;
   flex-direction: column;
@@ -233,12 +227,6 @@ h4 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 30px;
-}
-@media (max-width: 600px) {
-  .about .about-grid {
-    font-size: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
 }
 .about .about-grid .about-us-img {
   max-width: 555px;
@@ -317,12 +305,6 @@ button:hover {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 40px;
 }
-@media (max-width: 600px) {
-  .menu .container .menu-cards {
-    font-size: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
-}
 .menu .container .menu-cards .menu-card {
   display: flex;
   flex-direction: column;
@@ -390,12 +372,6 @@ button:hover {
 .take .take-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
-}
-@media (max-width: 400px) {
-  .take .take-grid {
-    font-size: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
 }
 .take .take-grid .take-content {
   display: flex;

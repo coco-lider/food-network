@@ -22,12 +22,6 @@
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 40px;
 
-            @media (max-width: 600px) {
-                font-size: 15px;
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-                
-              }
-
             .menu-card{
                 display: flex;
                 flex-direction: column;

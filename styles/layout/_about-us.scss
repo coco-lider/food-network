@@ -8,12 +8,6 @@
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         gap: 30px;
 
-        @media (max-width: 600px) {
-            font-size: 15px;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            
-          }
-
         .about-us-img{
             max-width: 555px;
             width: 100%;
