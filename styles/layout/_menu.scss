@@ -1,0 +1,101 @@
+.menu{
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+
+    .container{
+        .menu-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            h4{
+                color: var(--main-color);
+            }
+        }
+
+        .menu-cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+
+            @media (max-width: 600px) {
+                font-size: 15px;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                
+              }
+
+            .menu-card{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                background-color: white;
+                border: 1px solid rgb(161, 161, 161);
+                border-radius: 80px 20px 20px;
+                padding: 0 0 20px 0;
+                transition: 0.3s;
+
+                &:hover{
+                    transform: translateY(-5px);
+                }
+
+                &:hover .menu-card-img img{
+                    transform: scale(1.1);
+                }
+
+                .menu-card-img{
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    border-radius: 80px 20px 80px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 80px 20px 80px;
+                        transition: 0.3s;
+                    }
+                }
+
+                .menu-card-content{
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 20px;
+
+                    .menu-card-content-title{
+                        display: flex;
+                        justify-content: space-between
+                    }
+    
+                    .menu-card-content-footer{
+                        display: flex;
+                        justify-content: space-between;
+    
+                        button{
+                            height: 40px;
+                            width: 40px;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-btn{
+            width: 100%;
+            padding: 85px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button{
+                height: 80px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+:root{
+  --main-color: #DC780B;
+  --text-color: #8D8883;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  // background-color: red;
+}
+
+h4{
+  color: var(--main-color);
+}
