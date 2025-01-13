@@ -22,6 +22,15 @@
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 40px;
 
+            @media (max-width: 600px) {
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+               
+             }
+
+             @media (max-width: 438px) {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+               
+             }
 
             .features-card{
                 display: flex;

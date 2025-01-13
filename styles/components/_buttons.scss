@@ -1,13 +1,16 @@
 button{
   cursor: pointer;
-  padding: 20px;
-  font-size: 20px;
+  padding: 0 30px;
+  font-size: 15px;
   margin-right: 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: var(--main-color);
   color: white;
   border: none;
   white-space: nowrap;
+  transition: 0.3s;
+
+
 
   &:hover{
     background-color: transparent;
