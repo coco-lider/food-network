@@ -25,6 +25,12 @@
             overflow: hidden;
             border-radius: 30px;
 
+            @media (max-width: 1070px) {
+                text-align: center;
+                max-width: 100%;
+                width: 100%;
+             }
+
             &:hover img{
                 transform: scale(1.1);
 
@@ -45,6 +51,12 @@
             font-size: 20px;
             max-width: 565px;
             width: 100%;
+
+            @media (max-width: 1070px) {
+                text-align: center;
+                max-width: 100%;
+                width: 100%;
+             }
 
             .about-us-btn{
                 height: 80px;
