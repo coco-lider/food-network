@@ -1,15 +1,21 @@
 .header{
   width: 100%;
-  height: 100%;
-  border-bottom: 1px solid var(--main-color);
+  height: 80px;
+  margin-bottom: 80px;
+  background-color: white;
+  position: fixed;
+  z-index: 1000000;
 }
 
 .head{
   width: 100%;
   height: 80px;
-  padding-top: 20px;
+  // padding: 0 20px 0;
+  // padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
+
 
   .header-logo{
     display: flex;
@@ -17,6 +23,63 @@
     img{
       width: 50px;
       height: 50px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        &{
+          position: fixed;
+          left: -100%;
+          z-index: 9999;
+          top: 70px;
+          flex-direction: column;
+          background-color: white;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          padding: 2rem 0;
+
+          &.active {
+            left: 0;
+        }
+        }
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #666;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        position: relative;
+
+        &::before{
+          content: " ";
+          width: 0;
+          height: 3px;
+          background-color: var(--main-color);
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: 0.3s;
+        }
+
+        &:hover::before{
+          width: 100%;
+        }
+
+        &:hover {
+          color: #e67e22;
+      }
+
+      &.active {
+        color: #e67e22;
+    }
+    }
     }
 
     .header-nav{
@@ -60,6 +123,25 @@
     }
   }
 
+  .booking-btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+
+    .booking-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    @media (max-width:768px) {
+      & {
+        display: none;
+    }
+    }
+}
+
   .header-btn{
     display: flex;
     height: 46px;
@@ -70,17 +152,43 @@
       }
     }
 
-    .menu-icon{
+    .hamburger {
       display: none;
-      font-size: 40px;
+      border: none;
+      background: none;
       cursor: pointer;
-  
-      @media (max-width: 1020px){
+      padding: 0.5rem;
+
+      @media (max-width: 768px) {
         &{
           display: block;
+
+          &.active .bar:nth-child(2) {
+            opacity: 0;
         }
-        
+    
+        &.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        &.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        }
       }
-    }
+
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #333;
+        transition: all 0.3s ease;
+      }
+
+  }
+
+
+
   }
 }

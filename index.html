@@ -16,19 +16,21 @@
     <div class="head container">
       <div class="header-logo">
         <a href="#"><img src="./assets/header-logo.png" alt=""></a>
-        <div class="header-navs">
-          <ul class="header-nav">
-            <li><a href="#" class="header-nav-action">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </div>
+        <div class="nav-menu" id="navMenu">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">About us</a>
+          <a href="#" class="nav-link">Menu</a>
+          <a href="#" class="nav-link">Features</a>
+          <a href="#" class="nav-link">Contact us</a>
+      </div>
       </div>
       <div class="header-btn">
-        <button>Booking Now</button>
-        <box-icon class="menu-icon" name='menu'></box-icon>
+        <button class="booking-btn">Booking Now</button>
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </button>
       </div>
     </div>
   </header>
@@ -353,5 +355,7 @@
       
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html> 
